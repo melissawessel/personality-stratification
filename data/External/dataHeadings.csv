@@ -1,0 +1,40 @@
+Question,QuestionCode
+Start Date,Start Date
+End Date,End Date
+What color is the dress?,DressColor
+What color is the dress? (if other),DressColorOther
+Do you think it is in shadow?,DressShadow
+Do you think it is in shadow? (if other),DressShadowOther
+Do you think it is illuminated by artificial or natural light?,DressLight
+"Are you aware of the “true colors"" (the colors of the actual, physical dress, not those of the image)?",DressTrueColors
+"Are you aware of the “true colors"" (the colors of the actual, physical dress, not those of the image)? (if other)",DressTrueColorsOther
+What color is the jacket?,JacketColor
+What color is the jacket? (if other),JacketColorOther
+Do you think the jacket is in a shadow?,JacketShadow
+Do you think the jacket is illuminated by artificial or natural light?,JacketLight
+Do you think the light is coming from,JacketLightDirection
+"Are you aware of the ""true colors"" (the colors of the actual, physical jacket, not those of the image)?",JacketTrueColors
+What color are the flip flops?,FlopColor
+What color are the flip flops? (if other),FlopColorOther
+Do you think the flip flops are in a shadow?,FlopShadow
+Do you think the flip flops are illuminated by artificial or natural light?,FlopLight
+"Are you aware of the ""true colors"" (the colors of the actual, physical flip flops, not those of the image)?",FlopTrueColors
+What is your age?,Age
+Gender?,Gender
+Ethnicity?,Ethnicity
+"Would you characterize yourself as an ""owl"" (like to sleep in and stay up, feel best at night) or a ""lark"" (gets up early, goes to bed early and feels best in the morning)?",Chronotype
+"Would you characterize yourself as an ""owl"" (like to sleep in and stay up, feel best at night) or a ""lark"" (gets up early, goes to bed early and feels best in the morning)? (if other)",ChronotypeOther
+My favorite color is,FavColor
+"Do you have a known visual disorder? If so, what is it?",VisDisorder
+"Extraverted, enthusiastic",E+
+"Critical, quarrelsome",A-
+"Dependable, self-disciplined",C+
+"Anxious, easily upset",S-
+"Open to new experiences, complex",O+
+"Reserved, quiet",E-
+"Sympathetic, warm",A+
+"Disorganized, careless",C-
+"Calm, emotionally stable",S+
+"Conventional, uncreative",O-
+"Last thing: Did you take this seriously and are your answers sincere? Would you use them in your research, if you did this research?",HonestyCheck
+Anything else?,FreeText
