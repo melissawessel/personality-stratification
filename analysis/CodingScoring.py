@@ -48,5 +48,27 @@ def codeGender(df):
     male = ['Male','male','M','m','Male ','MALE','Make', 'Man',' Male','male ']
     df['GenderCode'][df['Gender'].isin(female)] = 1
     df['GenderCode'][df['Gender'].isin(male)] = 2
-
     return df['GenderCode']
+
+def stratTIPI(df,n_strat):
+    if(n_strat==3):
+        for trait in ['O','C','E','A','N']:
+            df['%s_strat'%trait]=0
+            df['%s_strat'%trait].loc[df[trait]<-1] = -1
+            df['%s_strat'%trait].loc[df[trait]>1] = 1
+#            df['%s_strat'%trait].loc[df['%s_strat'%trait]==0] = 2
+    if(n_strat==2):
+        for trait in ['O','C','E','A','N']:
+            df['%s_bistrat'%trait]=0
+            df['%s_bistrat'%trait].loc[df[trait]<0] = -1
+            df['%s_bistrat'%trait].loc[df[trait]>0] = 1
+    return df
+
+# not mine
+def getCronbachAlpha(itemscores):
+    itemscores = np.asarray(itemscores)
+    itemvars = itemscores.var(axis=1, ddof=1)
+    tscores = itemscores.sum(axis=0)
+    nitems = len(itemscores)
+
+    return nitems / (nitems-1.) * (1 - itemvars.sum() / tscores.var(ddof=1))
